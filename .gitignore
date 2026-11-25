@@ -1,0 +1,26 @@
+## Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build & temp files
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+obj/
+PrecompiledWeb/
+
+## Temporary & Backup archives
+*.zip
+*.rar
+*.7z
+*.bak
+*.tmp
+
+## OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

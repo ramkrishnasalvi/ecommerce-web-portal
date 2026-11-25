@@ -1,0 +1,781 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Emaster.master.cs" Inherits="Emaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Zenis- Multipurpose eCommerce</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="icon" type="image/png" href="E-com-Img/assets/images/favicon.png">
+    <link rel="stylesheet" href="E-com-Img/assets/css/all.min.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/animate.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/mobile_menu.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/nice-select.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/scroll_button.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/slick.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/venobox.min.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/select2.min.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/jquery.pwstabs.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/range_slider.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/multiple-image-video.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/animated_barfiller.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/custom_spacing.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/style.css">
+    <link rel="stylesheet" href="E-com-Img/assets/css/responsive.css">
+</head>
+<body class="default_home">
+    <form1 id="form1" runat="server">
+        <div>
+        <!--=========================
+        HEADER START
+    ==========================-->
+    <header class="header_2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="header_logo_area">
+                        <a href="index.aspx" class="header_logo">
+                            <img src="E-com-Img/assets/images/logo_2.png" alt="Zenis" class="img-fluid w-100">
+                        </a>
+                        <div class="mobile_menu_icon d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span class="mobile_menu_icon"><i class="far fa-stream menu_icon_bar"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-5 col-lg-5 d-none d-lg-block">
+                    <form action="#">
+                        <select class="select_2">
+                            <option>All Categories</option>
+                            <option>Fashion</option>
+                            <option>Elentronics</option>
+                            <option>Fashion & Beauty</option>
+                            <option>Jewelry</option>
+                            <option>Grocery</option>
+                        </select>
+                        <div class="input">
+                            <input type="text" placeholder="Search your product...">
+                            <button type="submit"><i class="far fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xxl-4 col-xl-5 col-lg-5 d-none d-lg-flex">
+                    <div class="header_support_user d-flex flex-wrap">
+                        <div class="header_support">
+                            <span class="icon">
+                                <i class="far fa-phone-alt"></i>
+                            </span>
+                            <h3>
+                                Hotline:
+                                <a href="callto:1234567890">
+                                    <span>+(402) 763 282 46</span>
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="topbar_right d-flex flex-wrap align-items-center justify-content-end">
+                        <select class="select_js language">
+                            <option>English</option>
+                            <option>Arabic</option>
+                            <option>Hindi</option>
+                            <option>Chinese</option>
+                        </select>
+                        <select class="select_js">
+                            <option>$USD</option>
+                            <option>€EUR</option>
+                            <option>¥JPY</option>
+                            <option>£GBP</option>
+                            <option>₹INR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=========================
+        HEADER END
+    ==========================-->
+    <!--=========================
+        MENU 2 START
+    ==========================-->
+    <nav class="main_menu_2 main_menu d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap">
+                    <div class="main_menu_area">
+                        <div class="menu_category_area">
+                            <a href="index.aspx" class="menu_logo d-none">
+                                <img src="E-com-Img/assets/images/logo_2.png" alt="Zenis" class="img-fluid w-100">
+                            </a>
+                            <div class="menu_category_bar">
+                                <p>
+                                    <span>
+                                        <img src="E-com-Img/assets/images/bar_icon_white.svg" alt="category icon">
+                                    </span>
+                                    Browse Categories
+                                </p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="menu_cat_item">
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_1.png" alt="category">
+                                        </span>
+                                        Men’s Fashion
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">shirts <i class="fal fa-angle-right"></i></a>
+                                            <ul class="sub_category">
+                                                <li><a href="shop.aspx">Casual Shirts</a> </li>
+                                                <li><a href="shop.aspx">Formal Shirts</a></li>
+                                                <li><a href="shop.aspx">Denim Shirts</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop.aspx">pant <i class="fal fa-angle-right"></i></a>
+                                            <ul class="sub_category">
+                                                <li><a href="shop.aspx">Casual Pants</a></li>
+                                                <li><a href="shop.aspx">Formal Trousers</a> </li>
+                                                <li><a href="shop.aspx">Jeans & Denim</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop.aspx">Casual Wear</a></li>
+                                        <li><a href="shop.aspx">Formal Attire</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_2.png" alt="category">
+                                        </span>
+                                        Women's Fashion
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">sharee</a></li>
+                                        <li><a href="shop.aspx">Shirts <i class="fal fa-angle-right"></i></a>
+                                            <ul class="sub_category">
+                                                <li><a href="shop.aspx">Full Sleeves Printed</a> </li>
+                                                <li><a href="shop.aspx">Full Sleeves Solid</a></li>
+                                                <li><a href="shop.aspx">Half Sleeves Solid</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop.aspx">T-Shirts <i class="fal fa-angle-right"></i></a>
+                                            <ul class="sub_category">
+                                                <li><a href="shop.aspx">Crew Neck</a></li>
+                                                <li><a href="shop.aspx">V Neck</a> </li>
+                                                <li><a href="shop.aspx">Henley Neck</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop.aspx">Nightie Set</a></li>
+                                        <li><a href="shop.aspx">3-Piece</a></li>
+                                        <li><a href="shop.aspx">leggings</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_3.png" alt="category">
+                                        </span>
+                                        KId's Fashion
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">Boys’ Fashion</a></li>
+                                        <li><a href="shop.aspx">Girls’ Fashion</a></li>
+                                        <li><a href="shop.aspx">Newborn Essentials <i class="fal fa-angle-right"></i></a>
+                                            <ul class="sub_category">
+                                                <li><a href="shop.aspx">Sleepwear</a></li>
+                                                <li><a href="shop.aspx">Loungewear</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop.aspx">Party & Occasion Wear</a></li>
+                                        <li><a href="shop.aspx">Winter Warmers</a></li>
+                                        <li><a href="shop.aspx">Summer Coolers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_4.png" alt="category">
+                                        </span>
+                                        denim Collection
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">Denim Essentials</a></li>
+                                        <li><a href="shop.aspx">Jeans & Bottoms</a></li>
+                                        <li><a href="shop.aspx">Denim Jackets</a></li>
+                                        <li><a href="shop.aspx">Outerwear</a></li>
+                                        <li><a href="shop.aspx">Denim Shirts & Tops</a></li>
+                                        <li><a href="shop.aspx">Denim Shorts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_5.png" alt="category">
+                                        </span>
+                                        western wear
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">Dresses & Jumpsuits</a></li>
+                                        <li><a href="shop.aspx">Tops & Blouses</a></li>
+                                        <li><a href="shop.aspx">T-Shirts & Tank Tops</a></li>
+                                        <li><a href="shop.aspx">Jeans & Denim</a></li>
+                                        <li><a href="shop.aspx">Trousers & Pants</a></li>
+                                        <li><a href="shop.aspx">Skirts & Shorts</a></li>
+                                        <li><a href="shop.aspx">Blazers & Jackets</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_6.png" alt="category">
+                                        </span>
+                                        sport wear
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">Men’s Activewear</a></li>
+                                        <li><a href="shop.aspx">Women’s Activewear</a></li>
+                                        <li><a href="shop.aspx">Gym & Training Gear</a></li>
+                                        <li><a href="shop.aspx">Running Apparel</a></li>
+                                        <li><a href="shop.aspx">Yoga & Athleisure</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_7.png" alt="category">
+                                        </span>
+                                        footwear
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">Men’s Footwear</a></li>
+                                        <li><a href="shop.aspx">Women’s Footwear</a></li>
+                                        <li><a href="shop.aspx">Casual Shoes</a></li>
+                                        <li><a href="shop.aspx">Formal Shoes</a></li>
+                                        <li><a href="shop.aspx">Boots & Winter Wear</a></li>
+                                        <li><a href="shop.aspx">Sandals & Slippers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_8.png" alt="category">
+                                        </span>
+                                        fashion jewellery
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">Necklaces & Pendants</a></li>
+                                        <li><a href="shop.aspx">Earrings & Studs</a></li>
+                                        <li><a href="shop.aspx">Bracelets & Bangles</a></li>
+                                        <li><a href="shop.aspx">Rings & Finger Jewelry</a></li>
+                                        <li><a href="shop.aspx">Brooches & Pins</a></li>
+                                        <li><a href="shop.aspx">Hair Accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop.aspx">
+                                        <span>
+                                            <img src="E-com-Img/assets/images/category_list_icon_2.png" alt="category">
+                                        </span>
+                                        Beauty & Cosmetics
+                                    </a>
+                                    <ul class="menu_cat_droapdown">
+                                        <li><a href="shop.aspx">Necklaces & Pendants</a></li>
+                                        <li><a href="shop.aspx">Earrings & Studs</a></li>
+                                        <li><a href="shop.aspx">Bracelets & Bangles</a></li>
+                                        <li><a href="shop.aspx">Rings & Finger Jewelry</a></li>
+                                        <li><a href="shop.aspx">Brooches & Pins</a></li>
+                                        <li><a href="shop.aspx">Hair Accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="all_category">
+                                    <a href="category.aspx">View All Categories <i class="far fa-arrow-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="menu_item">
+                            <li>
+                                <a class="active" href="Index.aspx">home <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a class="active" href="Index.aspx">Clothing Fashion 01</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Shop.aspx">shop <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a href="Shop.aspx">Shop</a></li>
+                                    <li><a href="Shop-Details.aspx">Shop Details</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Store.aspx">Store</a>
+                               
+                            </li>
+                            <li><a href="Flash-Deals.aspx">Flash Deals</a></li>
+                            <li><a href="#">pages <i class="fas fa-chevron-down"></i></a>
+                                <ul class="menu_droapdown">
+                                    <li><a href="about-us.aspx">about us</a></li>
+                                    <li><a href="category.aspx">Category</a></li>
+                                    <li><a href="brand.aspx">Brand</a></li>
+                                    <li><a href="cart.aspx">cart view</a></li>
+                                    <li><a href="wishlist.aspx">wishlist</a></li>
+                                    <li><a href="track-order.aspx">track order</a></li>
+                                    <li><a href="error.aspx">error/404</a></li>
+                                    <li><a href="privacy-policy.aspx">privacy Policy</a></li>
+                                    <li><a href="terms-condition.aspx">terms and condition</a></li>
+                                    <li><a href="return-policy.aspx">return policy</a></li>
+                                    <li><a href="sign-in.aspx">sign in</a></li>
+                                    <li><a href="sign-up.aspx">sign up</a></li>
+                                    <li><a href="forgot-password.aspx">forgot password</a></li>
+                                    <li><a href="dashboard.aspx">Dashboard</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.aspx">contact</a></li>
+                        </ul>
+                        <ul class="menu_icon">
+                            <li>
+                                <a href="compare.aspx">
+                                    <b>
+                                        <img src="E-com-Img/assets/images/compare_black.svg" alt="Wishlist" class="img-fluid">
+                                    </b>
+                                    <span>2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wishlist.aspx">
+                                    <b>
+                                        <img src="E-com-Img/assets/images/love_black.svg" alt="Wishlist" class="img-fluid">
+                                    </b>
+                                    <span>5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <b>
+                                        <img src="E-com-Img/assets/images/cart_black.svg" alt="cart" class="img-fluid">
+                                    </b>
+                                    <span>3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="user" href="dashboard.aspx">
+                                    <b>
+                                        <img src="E-com-Img/assets/images/user_icon_black.svg" alt="cart" class="img-fluid">
+                                    </b>
+                                    <h5> Smith Jhon</h5>
+                                </a>
+                                <ul class="user_dropdown">
+                                    <li>
+                                        <a href="dashboard.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"></path>
+                                            </svg>
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard_profile.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+                                            </svg>
+                                            my account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard_order.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"></path>
+                                            </svg>
+                                            my order
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard_wishlist.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"></path>
+                                            </svg>
+                                            wishlist
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"></path>
+                                            </svg>
+                                            logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mini_cart">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"> my cart <span>(05)</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>
+                        <a href="shop_details.aspx" class="cart_img">
+                            <img src="E-com-Img/assets/images/product_1.png" alt="product" class="img-fluid w-100">
+                        </a>
+                        <div class="cart_text">
+                            <a class="cart_title" href="shop_details.aspx">Men's Fashionable Hoodie</a>
+                            <p>$140 <del>$150</del></p>
+                            <span><b>Color:</b> Red</span>
+                            <span><b>Size:</b> XL (Extra Large)</span>
+                        </div>
+                        <a class="del_icon" href="#"><i class="fal fa-times"></i></a>
+                    </li>
+                    <li>
+                        <a href="#shop_details.aspx" class="cart_img">
+                            <img src="E-com-Img/assets/images/product_2.png" alt="product" class="img-fluid w-100">
+                        </a>
+                        <div class="cart_text">
+                            <a class="cart_title" href="shop_details.aspx">Kids cotton Combo Set</a>
+                            <p>$130 <del>$160</del></p>
+                            <span><b>Color:</b> Orange</span>
+                            <span><b>Size:</b> M (Medium)</span>
+                        </div>
+                        <a class="del_icon" href="#"><i class="fal fa-times"></i></a>
+                    </li>
+                    <li>
+                        <a href="shop_details.aspx" class="cart_img">
+                            <img src="E-com-Img/assets/images/product_3.png" alt="product" class="img-fluid w-100">
+                        </a>
+                        <div class="cart_text">
+                            <a class="cart_title" href="shop_details.aspx">Women's Western Party Dress</a>
+                            <p>$90 <del>$100</del></p>
+                            <span><b>Color:</b> Purple</span>
+                            <span><b>Size:</b> S (Small)</span>
+                        </div>
+                        <a class="del_icon" href="#"><i class="fal fa-times"></i></a>
+                    </li>
+                    <li>
+                        <a href="shop_details.aspx" class="cart_img">
+                            <img src="E-com-Img/assets/images/product_4.png" alt="product" class="img-fluid w-100">
+                        </a>
+                        <div class="cart_text">
+                            <a class="cart_title" href="shop_details.aspx">Men's trendy formal shoes</a>
+                            <p>$140</p>
+                            <span><b>Color:</b> Blue</span>
+                            <span><b>Size:</b> XL (Extra Large)</span>
+                        </div>
+                        <a class="del_icon" href="#"><i class="fal fa-times"></i></a>
+                    </li>
+                    <li>
+                        <a href="shop_details.aspx" class="cart_img">
+                            <img src="E-com-Img/assets/images/product_5.png" alt="product" class="img-fluid w-100">
+                        </a>
+                        <div class="cart_text">
+                            <a class="cart_title" href="shop_details.aspx">Kid's Western Party Dress</a>
+                            <p>$99.00</p>
+                            <span><b>Color:</b> Black</span>
+                            <span><b>Size:</b> L (Large)</span>
+                        </div>
+                        <a class="del_icon" href="#"><i class="fal fa-times"></i></a>
+                    </li>
+                </ul>
+                <h5>sub total <span>$429.00</span></h5>
+                <div class="minicart_btn_area">
+                    <a class="common_btn" href="cart.aspx">view cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================
+        MENU 2 END
+    ==========================-->
+            <!--============================
+        MOBILE MENU START
+    ==============================-->
+    <div class="mobile_menu_area">
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fal fa-times"></i></button>
+            <div class="offcanvas-body">
+
+                <ul class="mobile_currency">
+                    <li>
+                        <select class="select_js language">
+                            <option>English</option>
+                            <option>Arabic</option>
+                            <option>Hindi</option>
+                            <option>Chinese</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="select_js">
+                            <option>$USD</option>
+                            <option>€EUR</option>
+                            <option>¥JPY</option>
+                            <option>£GBP</option>
+                            <option>₹INR</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <ul class="mobile_menu_header d-flex flex-wrap">
+                    <li>
+                        <a href="compare.aspx">
+                            <b> <img src="E-com-Img/assets/images/compare_black.svg" alt="Wishlist" class="img-fluid"> </b>
+                            <span>2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wishlist.aspx">
+                            <b> <img src="E-com-Img/assets/images/love_black.svg" alt="Wishlist" class="img-fluid"></b>
+                            <span>4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.aspx">
+                            <b><img src="E-com-Img/assets/images/cart_black.svg" alt="cart" class="img-fluid"></b>
+                            <span>5</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.aspx">
+                            <b><img src="E-com-Img/assets/images/user_icon_black.svg" alt="cart" class="img-fluid"></b>
+                        </a>
+                    </li>
+                </ul>
+
+                <form class="mobile_menu_search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="far fa-search"></i></button>
+                </form>
+
+                <div class="mobile_menu_item_area">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Categories</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">menu</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <ul class="main_mobile_menu">
+                                <li class="mobile_dropdown">
+                                    <a href="#">Men's Fashion</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">jeans pant</a></li>
+                                        <li><a href="shop.aspx">formal shirt</a></li>
+                                        <li><a href="shop.aspx">2 quater</a></li>
+                                        <li><a href="shop.aspx">denim jacket</a></li>
+                                        <li><a href="shop.aspx">t-shirt</a></li>
+                                        <li><a href="shop.aspx">polo-shirt</a></li>
+                                        <li><a href="shop.aspx">formal pant</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">women's Fashion</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">sharee</a></li>
+                                        <li><a href="shop.aspx">kurti</a></li>
+                                        <li><a href="shop.aspx">plazoo</a></li>
+                                        <li><a href="shop.aspx">lagins</a></li>
+                                        <li><a href="shop.aspx">tops</a></li>
+                                        <li><a href="shop.aspx">scart</a></li>
+                                        <li><a href="shop.aspx">denim jeans</a></li>
+                                        <li><a href="shop.aspx">Gown</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">kids fashion</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">t-shirt</a></li>
+                                        <li><a href="shop.aspx">partu dress</a></li>
+                                        <li><a href="shop.aspx">sharee</a></li>
+                                        <li><a href="shop.aspx">kurti</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">western wear</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">western party dress</a></li>
+                                        <li><a href="shop.aspx">kurti</a></li>
+                                        <li><a href="shop.aspx">denim pant</a></li>
+                                        <li><a href="shop.aspx">casual jacket</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">Denim collection</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">shirt</a></li>
+                                        <li><a href="shop.aspx">pant</a></li>
+                                        <li><a href="shop.aspx">jacket</a></li>
+                                        <li><a href="shop.aspx">blazer</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">sport wear</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">shoes</a></li>
+                                        <li><a href="shop.aspx">trouser</a></li>
+                                        <li><a href="shop.aspx">meat</a></li>
+                                        <li><a href="shop.aspx">Outdoors</a></li>
+                                        <li><a href="shop.aspx">Sports Pant</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">beauty products</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">Concealer Palette</a></li>
+                                        <li><a href="shop.aspx">Highlighter Palette</a></li>
+                                        <li><a href="shop.aspx">SkinPure Avocado Gel</a></li>
+                                        <li><a href="shop.aspx">Blush Palette</a></li>
+                                        <li><a href="shop.aspx">Face Wash</a></li>
+                                        <li><a href="shop.aspx">Lip Balm</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">fashion jewellery</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="shop.aspx">Necklace</a></li>
+                                        <li><a href="shop.aspx">ear ring</a></li>
+                                        <li><a href="shop.aspx">fingure ring</a></li>
+                                        <li><a href="shop.aspx">bratchlet</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <ul class="main_mobile_menu">
+                                <li class="mobile_dropdown">
+                                    <a href="#">home</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="index.aspx">clothing fashion 01</a></li>
+                                        <li><a href="home_fashion_2.aspx">clothing fashion 02</a></li>
+                                        <li><a href="home_grocery.aspx">Grocery Store</a></li>
+                                        <li><a href="home_beauty.aspx">Beauty & Cosmetics</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">shop</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="#">store</a></li>
+                                        <li><a href="#">store details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">store</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="vendor.aspx">store</a></li>
+                                        <li><a href="vendor_details.aspx">store details</a></li>
+                                        <li><a href="vendor_registration.aspx">become a vendor</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="flash_deals.aspx">flash deals</a></li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">pages</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="about_us.aspx">about us</a></li>
+                                        <li><a href="category.aspx">Category</a></li>
+                                        <li><a href="brand.aspx">Brand</a></li>
+                                        <li><a href="cart.aspx">cart view</a></li>
+                                        <li><a href="wishlist.aspx">wishlist</a></li>
+                                        <li><a href="compare.aspx">compare</a></li>
+                                        <li><a href="checkout.aspx">checkout</a></li>
+                                        <li><a href="payment_success.aspx">payment success</a></li>
+                                        <li><a href="payment_cancel.aspx">payment Cancel</a></li>
+                                        <li><a href="track_order.aspx">track order</a></li>
+                                        <li><a href="error.aspx">error/404</a></li>
+                                        <li><a href="faq.aspx">FAQ's</a></li>
+                                        <li><a href="privacy_policy.aspx">privacy Policy</a></li>
+                                        <li><a href="terms_condition.aspx">terms and condition</a></li>
+                                        <li><a href="return_policy.aspx">return policy</a></li>
+                                        <li><a href="sign_in.aspx">sign in</a></li>
+                                        <li><a href="sign_up.aspx">sign up</a></li>
+                                        <li><a href="forgot_password.aspx">forgot password</a></li>
+                                        <li><a href="dashboard.aspx">Dashboard</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_dropdown">
+                                    <a href="#">blog</a>
+                                    <ul class="inner_menu">
+                                        <li><a href="blog_classic.aspx">blog classic</a></li>
+                                        <li><a href="blog_left_sidebar.aspx">blog right sidebar</a></li>
+                                        <li><a href="blog_left_sidebar.aspx">blog left sidebar</a></li>
+                                        <li><a href="blog_details.aspx">blog details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact_us.aspx">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============================
+        MOBILE MENU END
+    ==============================-->
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+   </div>
+        <!--==========================
+        SCROLL BUTTON START
+    ===========================-->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!--==========================
+        SCROLL BUTTON END
+    ===========================-->
+    </form1>
+    <!--jquery library js-->
+    <script src="E-com-Img/assets/js/jquery-3.7.1.min.js"></script>
+    <!--bootstrap js-->
+    <script src="E-com-Img/assets/js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="E-com-Img/assets/js/Font-Awesome.js"></script>
+    <!--counter js-->
+    <script src="E-com-Img/assets/js/jquery.waypoints.min.js"></script>
+    <script src="E-com-Img/assets/js/jquery.countup.min.js"></script>
+    <!--nice select js-->
+    <script src="E-com-Img/assets/js/jquery.nice-select.min.js"></script>
+    <!--select 2 js-->
+    <script src="E-com-Img/assets/js/select2.min.js"></script>
+    <!--simply countdown js-->
+    <script src="E-com-Img/assets/js/simplyCountdown.js"></script>
+    <!--slick slider js-->
+    <script src="E-com-Img/assets/js/slick.min.js"></script>
+    <!--venobox js-->
+    <script src="E-com-Img/assets/js/venobox.min.js"></script>
+    <!--wow js-->
+    <script src="E-com-Img/assets/js/wow.min.js"></script>
+    <!--marquee js-->
+    <script src="E-com-Img/assets/js/jquery.marquee.min.js"></script>
+    <!--pws tabs js-->
+    <script src="E-com-Img/assets/js/jquery.pwstabs.min.js"></script>
+    <!--scroll button js-->
+    <script src="E-com-Img/assets/js/scroll_button.js"></script>
+    <!--youtube background js-->
+    <script src="E-com-Img/assets/js/jquery.youtube-background.min.js"></script>
+    <!--range slider js-->
+    <script src="E-com-Img/assets/js/range_slider.js"></script>
+    <!--sticky sidebar js-->
+    <script src="E-com-Img/assets/js/sticky_sidebar.js"></script>
+    <!--multiple image upload js-->
+    <script src="E-com-Img/assets/js/multiple-image-video.js"></script>
+    <!--animated barfiller js-->
+    <script src="E-com-Img/assets/js/animated_barfiller.js"></script>
+    <!--main/custom js-->
+    <script src="E-com-Img/assets/js/custom.js"></script>
+</body>
+</html>

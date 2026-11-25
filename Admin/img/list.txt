@@ -1,0 +1,25 @@
+1.{/Header search category/
+[All Categories
+Fashion
+Elentronics
+Fashion & Beauty
+Jewelry
+Grocery]
+
+
+[Hotline: +(402) 763 282 46]
+
+[English
+Arabic
+Hindi
+Chinese]
+
+[$USD
+€EUR
+¥JPY
+£GBP
+₹INR]
+}
+2.{/navbar items category/
+[Browse Categories
+(Men’s Fashion>shirts>Casual Shirts
